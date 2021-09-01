@@ -52,4 +52,21 @@ body {
     height: 60%;
     background: var(--white);
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tipCalculator__inputs, #tipCalculator__show {
+    height: 90%;
+}
+
+#tipCalculator__inputs {
+        width: 55%;
+}
+
+#tipCalculator__show {
+    background-color:var(--very-dark-cyan);
+    width: 40%;
+    border-radius: 20px;
 }
