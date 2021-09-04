@@ -63,6 +63,9 @@ body {
 
 #tipCalculator__inputs {
     width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #tipCalculator__show {
@@ -71,18 +74,18 @@ body {
     border-radius: 20px;
 }
 
-#tipCalculator__bill {
+.tipCalculator__inputFormat {
     padding: 2%;
     color: var(--dark-grayish-cyan-one);
     font-weight: bold;
 }
 
-#input__container {
+.input__container {
     position: relative;
     font-size: 24px;
 }
 
-#input__container::before {
+#input__containerBill::before {
     content: '$';
     top: 14%;
     left: 2%;
@@ -91,7 +94,7 @@ body {
     font-weight: normal;
 }
 
-#input__container input {
+.input__container input {
     width: 90%;
     background: var(--light-grayish-cyan-two);
     border: none;
@@ -109,12 +112,54 @@ body {
     color: var(--very-dark-cyan)
 }
 
-#input__container input::placeholder {
+.input__container input::placeholder {
     padding-top: 10%;
     text-align: right;
     color: var(--dark-grayish-cyan-two);
  }
 
- #input__container input:focus {
+ .input__container input:focus {
      outline: none;   
  }
+
+ #tipCalculator__percentage {
+    padding: 2%;
+    color: var(--dark-grayish-cyan-one);
+    font-weight: bold;
+ }
+
+ #percentage__buttons {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 97%;
+ }
+
+ .buttons {
+     width: 27%;
+     height: 3em;
+     background-color: var(--very-dark-cyan);
+     border: none;
+     border-radius: 5px;
+     color: var(--white);
+     margin-top: 1em;
+     font-size: 1.3em;
+     font-weight: 900;
+     font-family: inherit;
+     cursor: pointer;;   
+ }
+
+ .buttons:last-child {
+    background: var(--light-grayish-cyan-two);
+    color: var(--dark-grayish-cyan-one);
+    letter-spacing: 0.2em;
+ }
+
+ #input__containerPeople::before {
+    content: url('./images/icon-person.svg');
+    top: 14%;
+    left: 2%;
+    position: absolute;
+    color: var(--dark-grayish-cyan-two);
+    font-weight: normal;
+}

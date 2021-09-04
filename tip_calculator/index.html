@@ -20,9 +20,26 @@
         </div>
         <div id="tipCalculator__container">
             <div id="tipCalculator__inputs">
-                <div id="tipCalculator__bill">
+                <div class="tipCalculator__inputFormat">
                     <p>Bill</p>
-                    <div id="input__container">
+                    <div id="input__containerBill" class="input__container">
+                        <input type="text" placeholder="0">
+                    </div>
+                </div>
+                <div id="tipCalculator__percentage">
+                    <p>Select Tip %</p>
+                    <div id="percentage__buttons">
+                        <button class="buttons">5%</button>
+                        <button class="buttons">10%</button>
+                        <button class="buttons">15%</button>
+                        <button class="buttons">25%</button>
+                        <button class="buttons">50%</button>
+                        <button class="buttons">Custom</button>
+                    </div>
+                </div>
+                <div class="tipCalculator__inputFormat">
+                    <p>Number of people</p>
+                    <div id="input__containerPeople" class="input__container">
                         <input type="text" placeholder="0">
                     </div>
                 </div>
