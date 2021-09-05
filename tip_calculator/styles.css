@@ -72,6 +72,8 @@ body {
     background-color:var(--very-dark-cyan);
     width: 40%;
     border-radius: 20px;
+    padding: 2em 3em;
+    box-sizing: border-box;
 }
 
 .tipCalculator__inputFormat {
@@ -162,4 +164,47 @@ body {
     position: absolute;
     color: var(--dark-grayish-cyan-two);
     font-weight: normal;
+}
+
+.tipCalculator__showContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+}
+
+.amount__person p{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.amount__person span {
+    color: var(--dark-grayish-cyan-two);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.amount__quantity {
+    color: var(--strong-cyan);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#button__reset {    
+    height: 40%;
+    display: flex;
+    align-items: end;
+
+}
+
+#button__reset button {
+    width: 100%;
+    height: 25%;
+    background: var(--strong-cyan);
+    border: none;
+    color: var(--light-grayish-cyan-one);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1.1em;
+    font-weight: bold;
 }
