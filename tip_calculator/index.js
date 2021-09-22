@@ -31,6 +31,8 @@ const getTip = (bill, person, percentage) => {
     let tip = (bill * percentage) / 100
     let tipByPerson = (tip / person)
     console.log(tip, tipByPerson)
+    tipPerson.innerHTML = tip
+    tipAmount.innerHTML = tipByPerson
 }
 
 
