@@ -3,6 +3,7 @@ let peopleInput = document.querySelector('#input__peopleNumber')
 const percentageButton = document.querySelectorAll('.buttons')
 let tipPerson = document.querySelector('#tip_amount_person')
 let tipAmount = document.querySelector('#tip_amount_total')
+let buttonReset = document.querySelector('#resetButton')
 let bill = 0
 let people = 0
 let percentage = 0
@@ -30,10 +31,21 @@ const validateNumber = (input) => {
 const getTip = (bill, person, percentage) => {
     let tip = (bill * percentage) / 100
     let tipByPerson = (tip / person)
-    console.log(tip, tipByPerson)
-    tipPerson.innerHTML = tip
-    tipAmount.innerHTML = tipByPerson
+    tipPerson.innerHTML = tipByPerson
+    tipAmount.innerHTML = tip
 }
+
+// Reset all values
+buttonReset.addEventListener('click', () => {
+    bill = 0
+    people = 0
+    percentage = 0
+    tipPerson.innerHTML = 0
+    tipAmount.innerHTML = 0
+    billInput.value = ''
+    peopleInput.value = ''
+
+})
 
 
 percentageButton.forEach(button => {
